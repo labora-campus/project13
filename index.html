@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labora - Entrena para el futuro, hoy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FF3366;
+            --dark-bg: #111111;
+            --text-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            background-color: rgba(17, 17, 17, 0.9);
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-white);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .apply-button {
+            background-color: var(--primary-color);
+            color: var(--text-white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5%;
+            background: linear-gradient(to bottom, rgba(17,17,17,0.9), rgba(17,17,17,0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3') center/cover;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .programs {
+            padding: 5rem 5%;
+        }
+
+        .programs h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .program-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .program-card {
+            background-color: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .program-info {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="https://labora.ar/assets/logo.svg" alt="Labora" class="logo">
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#programas">Programas</a>
+            <a href="#aceleracion">Aceleración</a>
+            <a href="#bootcamp">Bootcamp de IA</a>
+        </div>
+        <a href="#aplicar" class="apply-button">Aplicar ahora</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Entrena para el futuro, hoy.</h1>
+        <p>Labora crea programas de entrenamiento que buscan acelerar la curva de aprendizaje de developers que están en las primeras etapas de su trayectoria profesional.</p>
+        <a href="#programas" class="apply-button">Ver programas</a>
+    </section>
+
+    <section class="programs">
+        <h2>Nuestros programas</h2>
+        <div class="program-cards">
+            <div class="program-card">
+                <h3>Desarrollo Full Stack</h3>
+                <p>Aprendé a programar sin conocimientos previos, dominá tanto el Front End como el Back End y certificate como Full Stack Developer.</p>
+                <div class="program-info">
+                    <p>Part Time</p>
+                    <p>22 Semanas | 2 clases semanales de 2h</p>
+                    <p>Online y En Vivo</p>
+                </div>
+            </div>
+            <div class="program-card">
+                <h3>Aceleración en Golang</h3>
+                <p>Aprende el lenguaje de Go, enfrentándote a desafíos técnicos semanales y realizando proyectos colaborativos reales.</p>
+                <div class="program-info">
+                    <p>Part Time</p>
+                    <p>10 Semanas | 3 clases semanales de 2h</p>
+                    <p>Online y En Vivo</p>
+                </div>
+            </div>
+            <div class="program-card">
+                <h3>Aceleración en Java</h3>
+                <p>Domina las habilidades del lenguaje de Java, especialízate en Spring Boot para crear componentes back-end robustos.</p>
+                <div class="program-info">
+                    <p>Part Time</p>
+                    <p>10 Semanas | 3 clases semanales de 2h</p>
+                    <p>Online y En Vivo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
