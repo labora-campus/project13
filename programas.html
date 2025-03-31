@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas - Labora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FF3366;
+            --dark-bg: #111111;
+            --text-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            background-color: rgba(17, 17, 17, 0.9);
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-white);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .apply-button {
+            background-color: var(--primary-color);
+            color: var(--text-white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header {
+            padding-top: 120px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .programs-container {
+            padding: 2rem 5%;
+        }
+
+        .program-detail {
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .program-content h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .program-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .program-info {
+            background-color: rgba(255,255,255,0.03);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .program-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .info-item strong {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .program-detail {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="https://labora.ar/assets/logo.svg" alt="Labora" class="logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="programas.html">Programas</a>
+            <a href="#aceleracion">Aceleración</a>
+            <a href="#bootcamp">Bootcamp de IA</a>
+        </div>
+        <a href="#aplicar" class="apply-button">Aplicar ahora</a>
+    </nav>
+
+    <header class="header">
+        <h1>Nuestros Programas</h1>
+        <p>Descubre nuestros programas diseñados para acelerar tu carrera en tecnología</p>
+    </header>
+
+    <main class="programs-container">
+        <article class="program-detail">
+            <div class="program-content">
+                <h2>Desarrollo Full Stack</h2>
+                <p>Conviértete en un desarrollador Full Stack completo sin necesidad de conocimientos previos. Este programa integral te llevará desde los fundamentos hasta las tecnologías más demandadas en el mercado.</p>
+                <p>Aprenderás:</p>
+                <ul>
+                    <li>HTML, CSS y JavaScript</li>
+                    <li>React.js para frontend</li>
+                    <li>Node.js y Express para backend</li>
+                    <li>Bases de datos SQL y NoSQL</li>
+                    <li>Control de versiones con Git</li>
+                </ul>
+            </div>
+            <div class="program-info">
+                <h3>Detalles del programa</h3>
+                <div class="info-item">
+                    <strong>Duración:</strong> 22 Semanas
+                </div>
+                <div class="info-item">
+                    <strong>Modalidad:</strong> Part Time
+                </div>
+                <div class="info-item">
+                    <strong>Clases:</strong> 2 clases semanales de 2h
+                </div>
+                <div class="info-item">
+                    <strong>Formato:</strong> Online y En Vivo
+                </div>
+                <a href="#aplicar" class="apply-button">Aplicar al programa</a>
+            </div>
+        </article>
+
+        <article class="program-detail">
+            <div class="program-content">
+                <h2>Aceleración en Golang</h2>
+                <p>Especialízate en uno de los lenguajes más demandados en la industria. Aprende Go desde cero y desarrolla aplicaciones backend robustas y eficientes.</p>
+                <p>Aprenderás:</p>
+                <ul>
+                    <li>Fundamentos de Go</li>
+                    <li>Concurrencia y goroutines</li>
+                    <li>APIs RESTful con Go</li>
+                    <li>Testing y debugging</li>
+                    <li>Microservicios con Go</li>
+                </ul>
+            </div>
+            <div class="program-info">
+                <h3>Detalles del programa</h3>
+                <div class="info-item">
+                    <strong>Duración:</strong> 10 Semanas
+                </div>
+                <div class="info-item">
+                    <strong>Modalidad:</strong> Part Time
+                </div>
+                <div class="info-item">
+                    <strong>Clases:</strong> 3 clases semanales de 2h
+                </div>
+                <div class="info-item">
+                    <strong>Formato:</strong> Online y En Vivo
+                </div>
+                <a href="#aplicar" class="apply-button">Aplicar al programa</a>
+            </div>
+        </article>
+
+        <article class="program-detail">
+            <div class="program-content">
+                <h2>Aceleración en Java</h2>
+                <p>Domina Java y Spring Boot para desarrollar aplicaciones empresariales robustas y escalables. Aprende las mejores prácticas de la industria.</p>
+                <p>Aprenderás:</p>
+                <ul>
+                    <li>Java Core y POO</li>
+                    <li>Spring Boot Framework</li>
+                    <li>JPA y Hibernate</li>
+                    <li>Microservicios con Spring Cloud</li>
+                    <li>Testing con JUnit y Mockito</li>
+                </ul>
+            </div>
+            <div class="program-info">
+                <h3>Detalles del programa</h3>
+                <div class="info-item">
+                    <strong>Duración:</strong> 10 Semanas
+                </div>
+                <div class="info-item">
+                    <strong>Modalidad:</strong> Part Time
+                </div>
+                <div class="info-item">
+                    <strong>Clases:</strong> 3 clases semanales de 2h
+                </div>
+                <div class="info-item">
+                    <strong>Formato:</strong> Online y En Vivo
+                </div>
+                <a href="#aplicar" class="apply-button">Aplicar al programa</a>
+            </div>
+        </article>
+    </main>
+</body>
+</html> 
